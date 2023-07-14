@@ -1,0 +1,65 @@
+<div class="row">
+  <div class="col-md-4 offset-md-4 mt-3">
+    <div class="card">
+      <div class="card-body">
+        <form action="/personas/edit/{{personas._id}}" method="POST">
+          <div class="mb-3">
+            <label for="nombre">Nombre</label>
+            <input
+              type="text"
+              name="nombre"
+              value="{{personas.nombre}}"
+              placeholder="Escribe un nombre"
+              class="form-control mb-3"
+              autofocus
+            />
+             <div class="mb-3">
+              <label for="cedula">Cedula</label>
+              <input
+                type="text"
+                name="cedula"
+                value="{{personas.cedula}}"
+                placeholder=" Escribe una cedula"
+                class="form-control mb-3"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="apellido">Apellido</label>
+              <input
+                type="text"
+                name="apellido"
+                value="{{personas.apellido}}"
+                placeholder=" Escribe un apellido"
+                class="form-control mb-3"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="edad">Edad</label>
+              <input
+                type="text"
+                name="edad"
+                value="{{personas.edad}}"
+                placeholder=" Escribe tu edad"
+                class="form-control mb-3"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="telefono">Telefono</label>
+              <input
+                type="text"
+                name="telefono"
+                value="{{personas.telefono}}"
+                placeholder=" Escribe un telefono"
+                class="form-control mb-3"
+              />
+            </div>
+            <button
+              type=" submit"
+              class="form-control btn btn-success btn-block"
+            >Guardar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

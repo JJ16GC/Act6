@@ -1,0 +1,29 @@
+<div class="row">
+  <div id="container p-5">
+    <h1 class="text-center mt-4">Personas</h1>
+  </div>
+  {{#each personas}}
+    <div class="col-md-3 mt-4">
+      <div class="card">
+        <div class="card-body">
+          <h3>{{nombre}} {{apellido}}</h3>
+          <p class="mt-4"><b>Cedula: </b>{{cedula}}</p>
+          <p><b>Edad: </b> {{edad}}</p>
+          <p><b>Telefono: </b>{{telefono}}</p>
+        </div>
+        <div
+          class="card-footer d-flex justify-content-between align-items-center"
+        >
+          <a href="/personas/delete/{{_id}}" class="btn btn-danger">
+            Delete
+          </a>
+          <a href="/personas/edit/{{_id}}" class="btn btn-secondary">
+            Edit
+          </a>
+        </div>
+      </div>
+    </div>
+  {{else}}
+    <p class="text-white display-3 text-center my-5">There are no Tasks</p>
+  {{/each}}
+</div>

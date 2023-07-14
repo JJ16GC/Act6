@@ -1,0 +1,67 @@
+<div class="row">
+  <div class="col-md-6 offset-md-3 mt-5">
+    <div class="card">
+      <div class="card-body">
+        <form action="/doctores/create" method="POST">
+          <div class="mb-3 text-center">
+            <h4>Creacion Doctores</h4>
+          </div>
+          <div class="mb-3">
+            <!--<label for="title">Nombre</label>-->
+            <input
+              type="text"
+              name="nombre"
+              placeholder="Nombre"
+              class="form-control mb-3"
+              autofocus
+            />
+            <div class="mb-3">
+              <!--<label for="description">Apellido</label>-->
+              <input
+                type="text"
+                name="apellido"
+                placeholder="Apellido"
+                class="form-control mb-3"
+              />
+            </div>
+            <div class="mb-3">
+              <select name="especialidad" type="text" class="form-control">
+                <option selected="selected">-- Especialidad --</option>
+                <option value="Medicina general">Medicina general</option>
+                <option value="Cardiología">Cardiología</option>
+                <option value="Medicina interna">Medicina interna</option>
+                <option value="Dermatología">Dermatología</option>
+                <option value="Rehabilitación física">Rehabilitación física</option>
+                <option value="Psicología">Psicología</option>
+                <option value="Odontología">Odontología</option>
+                <option value="Radiología">Radiología</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <!--<label for="description">Apellido</label>-->
+              <input
+                type="text"
+                name="consultorio"
+                placeholder="Consultorio"
+                class="form-control mb-3"
+              />
+            </div>
+            <div class="mb-3">
+              <!--<label for="description">Apellido</label>-->
+              <input
+                type="text"
+                name="correo"
+                placeholder="Correo de contacto"
+                class="form-control mb-3"
+              />
+            </div>
+            <button
+              type="submit"
+              class="form-control btn btn-primary btn-block"
+            >Guardar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
