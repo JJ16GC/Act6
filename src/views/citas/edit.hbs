@@ -2,13 +2,13 @@
   <div class="col-md-4 offset-md-4 mt-3">
     <div class="card">
       <div class="card-body">
-        <form action="/citas/edit/{{personas._id}}" method="POST">
+        <form action="/citas/edit/{{citas._id}}" method="POST">
              <div class="mb-3">
               <label for="documento">Documento</label>
               <input
                 type="text"
-                name="documento"
-                value="{{citas.documento}}"
+                name="cedula"
+                value="{{citas.cedula}}"
                 placeholder=" Escribe una cedula"
                 class="form-control mb-3"
               />

@@ -15,7 +15,7 @@
           <a href="/citas/delete/{{_id}}" class="btn btn-danger">
             Eliminar
           </a>
-          <a href="/citas/detalle/{{_id}}" class="btn btn-info">
+          <a href="/citas/detalle/{{cedula}}/{{especialidad}}" class="btn btn-info">
             Detalles
           </a>
           <a href="/citas/edit/{{_id}}" class="btn btn-secondary">
@@ -25,6 +25,6 @@
       </div>
     </div>
   {{else}}
-    <p class="text-white display-3 text-center my-5">There are no Tasks</p>
+    <p class="text-white display-3 text-center my-5">No hay citas agendadas</p>
   {{/each}}
 </div>
